@@ -1,0 +1,40 @@
+﻿@model List<MVCDemo.Models.Department>
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+<h2>List of Departments</h2>
+
+<table>
+    <tr>
+        <td> DepartmentID</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td> Department Name</td>
+    </tr>
+    @foreach(var dep in Model)
+    {
+    <tr>
+        <td>@dep.departmentId</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>@dep.departmentName</td>
+
+        <td>@Html.ActionLink("Edit", "Edit", "Employee", new { DepartmentId = dep.departmentId })</td>
+       
+        <td align="right">@Html.ActionLink("Delete", "Delete", "Employee", new { DepartmentId = dep.departmentId },
+                                                                           new { onclick = "return confirm('Are you sure you wish to delete this article?');" })</td>
+    </tr>
+    }
+</table>
+
+@Html.ActionLink("Create Department","Create","Employee")
+

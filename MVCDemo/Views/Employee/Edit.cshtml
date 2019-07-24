@@ -1,0 +1,39 @@
+﻿@model MVCDemo.Models.Department
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Department</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post" asp-controller="Employee">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="departmentId" />
+            <div class="form-group">
+
+                <label asp-for="departmentId" class="control-label"></label>
+                <input asp-for="departmentId" class="form-control" type="text" />
+
+
+                <label asp-for="departmentName" class="control-label"></label>
+                <input asp-for="departmentName" class="form-control" type="text" />
+
+                @*@Html.LabelFor(x=>x.departmentName): @Html.TextBoxFor(x=>x.departmentName)*@                
+                <span asp-validation-for="departmentName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Edit" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
