@@ -12545,11 +12545,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Core\\MVCDemo-Git\\MVCDemo\\MVCDemo.csproj",
+      "projectUniqueName": "C:\\Core\\New folder\\MVCDemo\\MVCDemo\\MVCDemo.csproj",
       "projectName": "MVCDemo",
-      "projectPath": "C:\\Core\\MVCDemo-Git\\MVCDemo\\MVCDemo.csproj",
+      "projectPath": "C:\\Core\\New folder\\MVCDemo\\MVCDemo\\MVCDemo.csproj",
       "packagesPath": "C:\\Users\\shilpi.bhattacharya\\.nuget\\packages\\",
-      "outputPath": "C:\\Core\\MVCDemo-Git\\MVCDemo\\obj\\",
+      "outputPath": "C:\\Core\\New folder\\MVCDemo\\MVCDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
